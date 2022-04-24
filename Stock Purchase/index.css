@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Nunito:wght@200&display=swap');
+
+:root{
+    --primary-color: rgb(236, 236, 236);
+    --black1: #25272c;
+    --blue: #2c62d6;
+    --black2: #202327;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--primary-color);
+    font-family: Montserrat;
+}
+
+h1 {
+    margin-bottom: 2rem;
+    color: var(--primary-color);
+}
+
+main {
+    /* to divide into 2 parts */
+    display: flex;
+    height: 100vh;
+}
+
+.container1{
+    background-color: var(--black1);
+    /* to divide in 2 */
+    width: 50%;
+    text-align: center;
+    padding-top: 25vh;  
+}
+
+.container2{
+    background-color: var(--black2);
+    /* to divide in 2 */
+    width: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.container2 > div {
+    width: 75%;
+    margin: auto;
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+input{
+    border: none;
+    background-color: var(--black2);
+    padding: 1.2rem 1rem;
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+    width: 25rem;
+    color: var(--primary-color);
+}
+
+input::placeholder{
+    font-family: Montserrat;
+    font-size: 1.0rem;
+    color: var(--primary-color);
+}
+
+button{
+    border:none;
+    background-color: var(--blue);
+    color: var(--primary-color);
+    font-weight: 700;
+    padding: 1.2rem;
+    text-transform:uppercase;
+    cursor: pointer;
+    width: 25rem;
+    margin-top: 1rem;
+}
